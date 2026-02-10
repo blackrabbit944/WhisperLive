@@ -47,6 +47,9 @@ if __name__ == '__main__':
                           type=str,
                           default='fr',
                           help='Target language for translation, e.g., "fr" for French.')
+    parser.add_argument('--enable_timestamps',
+                          action='store_true',
+                          help='Show transcription with timestamps')
 
     args = parser.parse_args()
 
@@ -80,5 +83,6 @@ if __name__ == '__main__':
             mute_audio_playback=args.mute_audio_playback,      # Only used for file input, False by Default
             enable_translation=args.enable_translation,        # Enable translation of the transcription output
             target_language=args.target_language,              # Target language for translation, e.g., "fr
+            enable_timestamps=args.enable_timestamps,
         )
         client(f)
