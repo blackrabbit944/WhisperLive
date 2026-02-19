@@ -51,7 +51,7 @@ setup(
         "scipy",
         "websocket-client",
         "numba",
-        "openai-whisper==20240930",
+        "openai-whisper==20250625",
         "kaldialign",
         "soundfile",
         "tokenizers==0.20.3",
